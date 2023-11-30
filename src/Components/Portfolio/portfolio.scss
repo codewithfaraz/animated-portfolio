@@ -1,0 +1,71 @@
+.portfolio {
+  position: relative;
+  .progress {
+    text-align: center;
+    padding: 50px 16px;
+    color: yellow;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    .heading {
+      font-size: 48px;
+      letter-spacing: 5px;
+    }
+    .progressBar {
+      height: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .wrapper {
+      display: flex;
+      gap: 20px;
+      width: 60%;
+
+      margin: auto;
+
+      .imageContainer {
+        width: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .textContainer {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 16px;
+        }
+        button {
+          background: orange;
+          cursor: pointer;
+          padding: 10px;
+          width: 50%;
+          border-radius: 10px;
+          &:hover {
+            filter: brightness(80%);
+          }
+        }
+      }
+    }
+  }
+}

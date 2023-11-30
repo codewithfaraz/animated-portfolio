@@ -1,0 +1,112 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    hr {
+      width: 200px;
+      border: 0.5px solid gray;
+    }
+    p {
+      text-align: right;
+      color: grey;
+    }
+  }
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+    align-items: center;
+    flex: 2;
+    .upperTitle {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      img {
+        width: 180px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      h1 {
+        font-weight: 100;
+        font-size: 48px;
+        span {
+          font-weight: 900;
+          &:hover {
+            color: yellow;
+          }
+        }
+      }
+    }
+    .lowerTitle {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      h1 {
+        font-weight: 100;
+        font-size: 48px;
+        span {
+          font-weight: 900;
+          &:hover {
+            color: yellow;
+          }
+        }
+      }
+      button {
+        padding: 20px 40px;
+        background-color: yellow;
+        font-size: 24px;
+        border-radius: 20px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(70%);
+        }
+      }
+    }
+  }
+  .listContainer {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex: 2;
+    .box {
+      cursor: pointer;
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      gap: 5px;
+      border: 1px solid grey;
+      justify-content: space-around;
+      h1 {
+      }
+      p {
+        font-size: 12px;
+        text-align: justify;
+      }
+      button {
+        background-color: yellow;
+        font-size: 24px;
+        color: black;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          filter: brightness(70%);
+        }
+      }
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
